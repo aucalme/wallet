@@ -1,0 +1,246 @@
+@charset "utf-8";
+        /* 각 태그 위치와 순서 확인용 */
+        /*body, header, footer, section, aside, div, h1, h2, ul, li, button, select, a, canvas {
+            border: 1px solid red;
+        }*/
+        
+        
+        /* 전체 html */
+        html { 
+            scroll-behavior: smooth;
+        }
+        body {
+            align-items: center;
+        }
+        #wrap {
+            background-color: #dfdbdfe1;
+            height: 960px;
+        }
+        /* header div */
+        .header {
+            background-color: #12234e;
+            padding-bottom: 1px;
+        }
+        /* h1 logo */
+        .logo {
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            margin-right: 6px;
+            color: #eee;
+            font-size: 44px;
+        }
+        /* 지갑 아이콘*/
+        .logo i {
+            margin-right: 6px;
+        }
+        /* 로그인,회원가입 ul */
+        .sign {
+            list-style: none;
+            padding-bottom: 30px;
+            margin-bottom: 50px;
+            margin-right: 20px;
+        }
+        /* 로그인,회원가입 li */
+        .sign li {
+            display: inline-block;
+            float: right;
+            padding: 12px 20px;
+        }
+        /* 로그인,회원가입 a */
+        .sign a {
+            text-decoration: none;
+            color:#fff;
+        }
+        .sign a:hover {
+            color: #f8b256;
+        }
+        /* < */
+        #left {
+            margin-left: 45%;
+            color:#302e2e;
+        }
+        #left:hover {
+            color: #f8b256;
+        }
+        /* > */
+        #right {
+            color: #302e2e;
+        }
+        #right:hover {
+            color: #f8b256;
+        }
+        /* h2 month */
+        .month {
+            color:#2e2d2d;
+            padding: 5px 20px;
+            margin: 10px;
+            display: inline-block;
+        }
+        /* float right를 위한 div */
+        .right {
+            float: right;
+            margin-top: 20px;
+        }
+        /* 버튼 div */
+        .btn {
+            float: left;
+        }
+        /* 수입,지출 페이지 변경 버튼 */
+        .btnPage {
+            padding: 8px 15px;
+            display: inline-block;
+            font-size: 16px;
+            background-color: #FDFDFD;
+            margin-right: 6px;
+        }
+        .btnPage:hover {
+            background-color: #0052A5;
+            color: #fff;
+        }
+        /* select form */
+        .form {
+            float: left;
+            margin-right: 30px;
+        }
+        /* 월별,일별 select */
+        .select {
+            padding: 10px 6px;
+            font-size: 16px;
+            background-color: #FDFDFD;
+            display: inline-block;
+        }
+        /* section 영역 */
+        .income {
+            float: left;
+            display: flex;
+        }
+        /* 차트 영역 div */
+        .chartArea {
+            float: right;
+            background-color: #fff;
+            border-radius: 2%;
+            width: 42%;
+            height: 580px;
+            /* margin: 20px 30px;
+            margin-bottom: 0; */
+            position: absolute;
+            top: 350px;
+            right: 45px;
+        }
+        /* chart-div 영역*/
+        .chart-div {
+            width: 600px;
+            height: 580px;
+        }
+        /* 차트 종류 드롭다운박스 */
+        #category {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 6px;
+        }
+        /* 수입 chart가 그려지는 canvas */
+        #chart {
+            margin: 100px 0 0 10px;
+        }
+        /* income list 영역 nav */
+        .listArea {
+            float: left;
+            width: 50%;
+            height: 580px;
+            display: inline-block;
+            /* margin: 20px 0 30px 30px; */
+            background-color: #fff;
+            border-radius: 2%;
+            position: absolute;
+            top: 350px;
+            left: 35px;
+        }
+        /* 차트 리스트 ul */
+        .chartList {
+            list-style: none;
+            display: inline-block;
+        }
+        /* 차트 리스트 li */
+        .chartList li {
+            padding: 12px;
+        }
+        .work:hover {
+            color: #0052A5
+        }
+        .financial:hover {
+            color: #929292;
+        }
+        .etcIncome:hover {
+            color: #65A8C4;
+        }
+        /* 총 지출 ul */
+        .total {
+            list-style: none;
+            float: right;
+            margin: 30px;
+        }
+        /* 총 지출 li */
+        .total li {
+            padding: 10px 15px 10px 0;
+            font-size: 20px;
+            font: bold;
+        }
+        .eat:hover {
+            color: #C9707E;
+        }
+        .culture:hover {
+            color: #E48E58;
+        }
+        .finance:hover {
+            color: #5AA08D;
+        }
+        .trans:hover {
+            color: #4C92B1;
+        }
+        .housing:hover {
+            color: #ABC879;
+        }
+        .medical:hover {
+            color: #AC99C1;
+        }
+        .other:hover {
+            color: #96B1D0;
+        }
+        /* footer div */
+        .footer {
+            padding: 15px;
+            background-color: #12234e;
+            margin-top: 690px;
+        }
+        /* p */
+        .copyright {
+            text-align: center;
+            color:#ddd;
+        }
+        /* footer 리스트 ul */
+        .footerList {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        /* footer 리스트 li */
+        .footerList li {
+            display: inline-block;
+            padding: 12px;
+        }
+        /* footer 리스트 a */
+        .footerList a {
+            text-decoration: none;
+            color:#fff;
+        }
+        /* top 스크롤버튼  */
+        .topbtn i {
+            color: #4275f7;
+            font-size: 40px;
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+        }
